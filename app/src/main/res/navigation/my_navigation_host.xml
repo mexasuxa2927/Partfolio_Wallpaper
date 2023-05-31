@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation_host"
+    app:startDestination="@id/intro_page">
+    <fragment
+        android:id="@+id/intro_page"
+        android:name="com.example.partfolio2.Pages.Intro_page"
+        android:label="fragment_intro_page"
+        tools:layout="@layout/fragment_intro_page" >
+        <action
+            android:id="@+id/action_intro_page_to_home_page"
+            app:destination="@id/home_page"
+            app:popUpTo="@id/intro_page"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_page"
+        android:name="com.example.partfolio2.Pages.Home_page"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_home_page_to_itemPage"
+            app:destination="@id/itemPage" />
+        <action
+            android:id="@+id/action_home_page_to_savePhotoPage"
+            app:destination="@id/savePhotoPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemPage"
+        android:name="com.example.partfolio2.Pages.ItemPage"
+        android:label="fragment_item_page"
+        tools:layout="@layout/fragment_item_page" />
+    <fragment
+        android:id="@+id/savePhotoPage"
+        android:name="com.example.partfolio2.Pages.SavePhotoPage"
+        android:label="fragment_save_photo_page"
+        tools:layout="@layout/fragment_save_photo_page" >
+        <action
+            android:id="@+id/action_savePhotoPage_to_itemPage"
+            app:destination="@id/itemPage" />
+    </fragment>
+</navigation>
