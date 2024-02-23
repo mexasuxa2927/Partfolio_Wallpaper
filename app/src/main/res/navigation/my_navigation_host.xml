@@ -6,7 +6,7 @@
     app:startDestination="@id/intro_page">
     <fragment
         android:id="@+id/intro_page"
-        android:name="com.example.partfolio2.Pages.Intro_page"
+        android:name="com.example.partfolio2.pages.Intro_page"
         android:label="fragment_intro_page"
         tools:layout="@layout/fragment_intro_page" >
         <action
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/home_page"
-        android:name="com.example.partfolio2.Pages.Home_page"
+        android:name="com.example.partfolio2.pages.Home_page"
         android:label="fragment_home_page"
         tools:layout="@layout/fragment_home_page" >
         <action
@@ -29,12 +29,12 @@
     </fragment>
     <fragment
         android:id="@+id/itemPage"
-        android:name="com.example.partfolio2.Pages.ItemPage"
+        android:name="com.example.partfolio2.pages.ItemPage"
         android:label="fragment_item_page"
         tools:layout="@layout/fragment_item_page" />
     <fragment
         android:id="@+id/savePhotoPage"
-        android:name="com.example.partfolio2.Pages.SavePhotoPage"
+        android:name="com.example.partfolio2.pages.SavePhotoPage"
         android:label="fragment_save_photo_page"
         tools:layout="@layout/fragment_save_photo_page" >
         <action

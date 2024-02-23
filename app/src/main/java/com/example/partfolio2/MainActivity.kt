@@ -2,13 +2,8 @@ package com.example.partfolio2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import androidx.lifecycle.lifecycleScope
-import com.example.partfolio2.App.App
-import com.example.partfolio2.Utils.Resources
-import com.example.partfolio2.ViewModel.MyViewModel
-import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.launch
+import com.example.partfolio2.app.App
+import com.example.partfolio2.viewmodel.MyViewModel
 import javax.inject.Inject
 
 

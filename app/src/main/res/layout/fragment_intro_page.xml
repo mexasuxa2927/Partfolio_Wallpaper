@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/backgroundColor"
 
-    tools:context=".Pages.Intro_page">
+    tools:context=".pages.Intro_page">
 
     <TextView
         android:id="@+id/textView"
